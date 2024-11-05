@@ -81,16 +81,12 @@ h3 {
 	color: var(--primary);
 	margin-bottom: 1rem;
 }
-h3::before {
-	content: "+ ";
-	color: var(--primary);
-}
 h4 {
 	font-weight: 700;
 	color: var(--secondary);
 }
 ul {
-	list-style-type: "⨯ ";
+	list-style-type: square;
 }
 ul li::marker {
 	color: var(--secondary);
@@ -115,6 +111,9 @@ ul li::marker {
 .grid__lg {
 	row-gap: 1rem;
 }
+.grid__xl {
+	row-gap: 2rem;
+}
 .flex__item {
 	display: flex;
 	flex-direction: column;
@@ -128,6 +127,7 @@ ul li::marker {
 	padding: 0.8rem 2rem;
 	border-radius: 2rem;
 	font-size: 1.5rem;
+	text-wrap: nowrap;
 }
 .date-span {
 	background-color: var(--secondary);
@@ -156,4 +156,10 @@ ul li::marker {
 	background-color: var(--secondary);
 	fill: #fff;
 	border: 0.2rem solid #fff;
+}
+.small {
+	font-size: 1.2rem;
+}
+.text-justify {
+	text-align: justify;
 }
