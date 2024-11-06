@@ -20,20 +20,22 @@
 	#print {
 		display: none;
 		opacity: 0;
-		cursor: default;
+	}
+	.span-item,
+	.date-span,
+	.upper-image {
+		background: unset;
+		background-color: unset;
 	}
 	.span-item {
-		background-color: unset;
 		color: var(--gray);
 		border: 0.2rem solid var(--primary);
 	}
 	.date-span {
-		background-color: unset;
 		color: var(--gray);
 		border: 0.2rem solid var(--secondary);
 	}
 	.upper-image {
-		background-color: unset;
 		border: 0.2rem solid var(--p-shade);
 	}
 }

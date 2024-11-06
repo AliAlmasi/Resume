@@ -6,7 +6,7 @@ document
 	.querySelectorAll("a")
 	.forEach((tag) => (tag.href = tag.href.toString().toLowerCase()));
 
-function checkFlexGap() {
+(function () {
 	var flex = document.createElement("div");
 	flex.style.display = "flex";
 	flex.style.flexDirection = "column";
@@ -20,8 +20,7 @@ function checkFlexGap() {
 	flex.parentNode.removeChild(flex);
 
 	if (!isSupported) document.body.classList.add("no-flexbox-gap");
-}
-checkFlexGap();
+})();
 
 window.addEventListener("beforeprint", () => {
 	document.title = printFileName;

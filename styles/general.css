@@ -1,6 +1,6 @@
 :root {
 	--black: #1f1f1f;
-	--gray: #3f5874;
+	--gray: #233141;
 	--primary: #00509d;
 	--p-tint: #4d85ba;
 	--p-shade: #00305e;
@@ -47,8 +47,8 @@ body {
 	margin: 0;
 }
 .page {
-	--bleeding: 0.2cm;
-	--margin: 0.5cm;
+	--bleeding: 0.3cm;
+	--margin: 1cm;
 	display: inline-block;
 	position: relative;
 	height: 297mm;
@@ -57,7 +57,7 @@ body {
 	margin: 2em auto;
 	padding: calc(var(--bleeding) + var(--margin));
 	box-shadow: 0 0.5rem 0.3cm rgba(0, 0, 0, 0.7);
-	background: #fff;
+	background: #fafafa;
 }
 /* ==================== */
 a:link,
@@ -79,7 +79,7 @@ strong {
 h3 {
 	font-weight: 800;
 	color: var(--primary);
-	margin-bottom: 1rem;
+	margin-bottom: 0.6rem;
 }
 h4 {
 	font-weight: 700;
@@ -122,6 +122,7 @@ ul li::marker {
 .span-item {
 	direction: ltr;
 	background-color: var(--primary);
+	background: linear-gradient(215deg, var(--primary) 0%, var(--secondary) 100%);
 	color: #fff;
 	font-weight: 500;
 	padding: 0.8rem 2rem;
