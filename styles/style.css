@@ -35,7 +35,7 @@
 	display: flex;
 	height: 70%;
 	flex-direction: column;
-	gap: 2.6rem;
+	gap: 3.2rem;
 }
 .skills {
 	display: flex;
@@ -47,7 +47,6 @@
 }
 .project__item a[target="_blank"] {
 	display: contents;
-	/* The element itself does not generate any boxes, but its children (img tag below) generate boxes as normal */
 }
 .project__item a img {
 	max-width: 23.4rem;
